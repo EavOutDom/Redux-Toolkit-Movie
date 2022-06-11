@@ -1,0 +1,10 @@
+@import "../../common/colors.scss";
+
+.pagenotfound {
+    color: $font-primary;
+    height: 100px;
+    font-size: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
