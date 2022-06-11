@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Toolkit-Movie/static/css/main.850a7129.css",
-    "main.js": "/React-Toolkit-Movie/static/js/main.117d58f5.js",
-    "static/media/user.png": "/React-Toolkit-Movie/static/media/user.40bab71e115240384f90.png",
-    "index.html": "/React-Toolkit-Movie/index.html",
-    "main.850a7129.css.map": "/React-Toolkit-Movie/static/css/main.850a7129.css.map",
-    "main.117d58f5.js.map": "/React-Toolkit-Movie/static/js/main.117d58f5.js.map"
+    "main.css": "/Redux-Toolkit-Movie/static/css/main.850a7129.css",
+    "main.js": "/Redux-Toolkit-Movie/static/js/main.0ce761be.js",
+    "static/media/user.png": "/Redux-Toolkit-Movie/static/media/user.40bab71e115240384f90.png",
+    "index.html": "/Redux-Toolkit-Movie/index.html",
+    "main.850a7129.css.map": "/Redux-Toolkit-Movie/static/css/main.850a7129.css.map",
+    "main.0ce761be.js.map": "/Redux-Toolkit-Movie/static/js/main.0ce761be.js.map"
   },
   "entrypoints": [
     "static/css/main.850a7129.css",
-    "static/js/main.117d58f5.js"
+    "static/js/main.0ce761be.js"
   ]
 }
