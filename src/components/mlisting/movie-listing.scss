@@ -1,0 +1,30 @@
+@import "../../common/colors.scss";
+
+.movie-warrap {
+}
+
+.movie-list, .shows-list {
+    margin: 20px 0;
+    h2 {
+        color: $font-secondary;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+}
+
+.movie-container {
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    // display: flex;
+    // -ms-flex-wrap: wrap;
+    // flex-wrap: wrap;
+    // max-width: 100%;
+    // margin-left: auto;
+    // margin-right: auto;
+    // -webkit-box-pack: center;
+    // -ms-flex-pack: center;
+    // justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 15px;
+}
