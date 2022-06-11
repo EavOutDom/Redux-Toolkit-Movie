@@ -14,8 +14,8 @@ const App = () => {
                 <Header />
                 <div className="container">
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="movie/:imdbId" element={<MovieDetail/>}/>
+                    <Route path="/Redux-Toolkit-Movie" element={<Home/>}/>
+                    <Route path="/Redux-Toolkit-Movie/movie/:imdbId" element={<MovieDetail/>}/>
                     <Route path="*" element={<PageNotFound/>}/>
                 </Routes>
                 </div>

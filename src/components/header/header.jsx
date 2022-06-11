@@ -9,7 +9,7 @@ const Header = () => {
   const dispatch = useDispatch();
   return (
     <div className='header'>
-      <NavLink to={'/'}>
+      <NavLink to={'/Redux-Toolkit-Movie'}>
         <div className='logo'> Movie App</div>
       </NavLink>
       <div className='search-bar'>
