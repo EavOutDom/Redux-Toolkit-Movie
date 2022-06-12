@@ -1,7 +1,9 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { APIKey } from "../../common/api/movie-api-key";
-// import movieApi from "../../common/api/movie-api";
+
+//use your own api key on https://www.omdbapi.com/
+
 export const getMovies = createAsyncThunk("movies/getMovies", async (moivesTitle) => {
     try {
         const response = await axios(

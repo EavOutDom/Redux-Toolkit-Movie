@@ -1,1 +1,1 @@
-export const APIKey = '71269594';
+export const APIKey = '71269594'; //use your own api key on https://www.omdbapi.com/
