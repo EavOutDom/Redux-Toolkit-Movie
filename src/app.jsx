@@ -6,6 +6,7 @@ import Footer from "./components/footer/footer";
 import Home from './components/home/home';
 import MovieDetail from './components/mdetail/movie-detail';
 import PageNotFound from './components/404/page-not-found';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 const App = () => {
     return (
         

@@ -1,9 +1,15 @@
 @import "../../common/colors.scss";
 
-.movie-warrap {
+.movies-error {
+    position: relative;
+    color: #ffffff;
+    font-size: 1.5rem;
+    top: 0px;
+    width: 250px;
 }
 
-.movie-list, .shows-list {
+.movie-list,
+.shows-list {
     margin: 20px 0;
     h2 {
         color: $font-secondary;

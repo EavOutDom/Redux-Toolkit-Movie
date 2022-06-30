@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import MovieListing from "../mlisting/movie-listing";
-import { useDispatch } from "react-redux";
-import { getMovies, getShows } from "../../features/movies/movie-slice";
+import { useDispatch, useSelector } from "react-redux";
+import { getAllLoading, getMovies, getShows } from "../../features/movies/movie-slice";
+import Loading from "../loading/loading";
 const Home = () => {
+    const loading = useSelector(getAllLoading);
+    // console.log(loading);
     const dispatch = useDispatch();
     let moviesTitle = 'Batman';
     let showsTitle = 'Stranger';
@@ -12,6 +15,10 @@ const Home = () => {
     useEffect(() => {
         dispatch(getShows(showsTitle));
     }, [dispatch, showsTitle]);
+
+    if (loading) {
+        return <div><Loading/></div>;
+    }
     return (
         <div>
             <div className="banner-img"></div>

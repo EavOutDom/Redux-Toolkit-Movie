@@ -25,8 +25,8 @@ const MovieListing = () => {
                 );
             })
         ) : (
-            <div className="movies-error">
-                <h3>{movies.Error}</h3>
+            <div>
+                <h3 className="movies-error">{movies.Error}</h3>
             </div>
         );
     renderShows =
@@ -43,8 +43,8 @@ const MovieListing = () => {
                 );
             })
         ) : (
-            <div className="movies-error">
-                <h3>{shows.Error}</h3>
+            <div>
+                <h3 className="movies-error">{shows.Error}</h3>
             </div>
         );
     return (

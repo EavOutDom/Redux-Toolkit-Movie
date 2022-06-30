@@ -2,15 +2,18 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import {
+    getAllLoading,
     getAllMovieDetail,
     getMovieDetail,
     removeSelection,
 } from "../../features/movies/movie-slice";
+import Loading from "../loading/loading";
 import "../mdetail/movie-detail.scss";
 const MovieDetail = () => {
     let { imdbId } = useParams();
     const dispatch = useDispatch();
     const movieDetail = useSelector(getAllMovieDetail);
+    const loading = useSelector(getAllLoading);
     console.log(movieDetail);
     useEffect(() => {
         dispatch(getMovieDetail(imdbId));
@@ -18,6 +21,10 @@ const MovieDetail = () => {
           dispatch(removeSelection());
         }
     }, [dispatch, imdbId]);
+
+    if (loading){
+        return <div><Loading/></div>;
+    }
 
     return (
         <div className="movie-section">
