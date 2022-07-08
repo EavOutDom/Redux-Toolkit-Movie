@@ -8,6 +8,22 @@
     font-weight: 400;
 }
 
+@media screen and (max-width: 700px) {
+
+    .movie-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .section-right {
+        display: flex;
+        justify-content: center;
+    }
+    .movie-rating {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .movie-rating {
     padding-left: 3px;
     margin-top: 20px;
@@ -15,6 +31,7 @@
     display: flex;
     span {
         margin-right: 20px;
+        
     }
 }
 

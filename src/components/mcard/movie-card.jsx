@@ -4,7 +4,7 @@ import "../mcard/movie-card.scss";
 const MovieCard = ({ title, poster, year, imdbID }) => {
     return (
         <div className="card-item">
-            <div className="card-innner">
+            <div className="card-inner">
                 <Link to={`movie/${imdbID}`}>
                     <div className="card-top">
                         <img src={poster} alt={title} />

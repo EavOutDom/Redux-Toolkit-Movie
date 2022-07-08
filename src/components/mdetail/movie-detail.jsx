@@ -18,12 +18,16 @@ const MovieDetail = () => {
     useEffect(() => {
         dispatch(getMovieDetail(imdbId));
         return () => {
-          dispatch(removeSelection());
-        }
+            dispatch(removeSelection());
+        };
     }, [dispatch, imdbId]);
 
-    if (loading){
-        return <div><Loading/></div>;
+    if (loading) {
+        return (
+            <div>
+                <Loading />
+            </div>
+        );
     }
 
     return (
@@ -32,29 +36,39 @@ const MovieDetail = () => {
                 <div>...Loading</div>
             ) : (
                 <>
-                <div className="section-right">
-                        <img src={movieDetail.Poster} alt={movieDetail.Title} style={{width: '200px', borderRadius: '15px'}}/>
+                    <div className="section-right">
+                        <img
+                            src={movieDetail.Poster}
+                            alt={movieDetail.Title}
+                            style={{ width: "200px", borderRadius: "15px" }}
+                        />
                     </div>
                     <div className="section-left">
                         <div className="movie-title">{movieDetail.Title}</div>
                         <div className="movie-rating">
                             <span>
-                                IMDB Rating <i className="fa fa-star">
-                                
-                                </i> :{""}
-                                {movieDetail.imdbRating}
+                                IMDB Rating{" "}
+                                <i className="fa fa-star">
+                                    {movieDetail.imdbRating}
+                                </i>
                             </span>
                             <span>
-                                IMDB Votes <i className="fa fa-thumbs-up"></i> :{" "}
-                                {movieDetail.imdbVotes}
+                                IMDB Votes{" "}
+                                <i className="fa-star">
+                                    {movieDetail.imdbVotes}
+                                </i>
                             </span>
                             <span>
-                                Runtime <i className="fa fa-film"></i> :{" "}
-                                {movieDetail.Runtime}
+                                Runtime{" "}
+                                <i className="fa-star">
+                                    {movieDetail.Runtime}
+                                </i>
                             </span>
                             <span>
-                                Year <i className="fa fa-calendar"></i> :{" "}
-                                {movieDetail.Year}
+                                Year{" "}
+                                <i className="fa-star">
+                                    {movieDetail.Year}
+                                </i>
                             </span>
                         </div>
                         <div className="movie-plot">{movieDetail.Plot}</div>
@@ -81,7 +95,6 @@ const MovieDetail = () => {
                             </div>
                         </div>
                     </div>
-                    
                 </>
             )}
         </div>
